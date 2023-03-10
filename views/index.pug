@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  br
+  a(href=`http://localhost:${process.env.PORT || 3000}/new`) new
+  div
+    each val in messages
+      p= val.text +" "+ val.user 
+      p= val.added
+      br

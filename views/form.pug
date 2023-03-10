@@ -1,0 +1,16 @@
+extends layout 
+
+block content
+
+ h1= title
+
+ form( method='POST', action="/new")
+    label(for="fname") name: 
+    input( type="text" id="fname" name="messageUser")
+    br
+    br
+    label(for="fMessage") Message: 
+    input( type='text' id="fMessage" name="messageText")
+    br 
+    input( type="submit")
+    
